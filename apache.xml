@@ -1,137 +1,19 @@
+[‎8/‎21/‎2017 1:48 PM]  Chris Tessier:  
 <cis>
    <ci>
-      <type>T1</type>
+      <type>cmdb_ci_appl</type>
       <label>Apache</label>
-      <ip>TEST_IP</ip>
+      <ip>127.0.0.1</ip>
       <conngroup type="CLUSTER">
          <connection>
-            <targetci>T1</targetci>
+            <targetci>cmdb_ci_win_server</targetci>
             <targetlabel>TradeServer1</targetlabel>
-            <host>TEST_IP</host>
+            <host>127.0.0.1</host>
          </connection>
          <connection>
-            <targetci>T1</targetci>
+            <targetci>cmdb_ci_win_server</targetci>
             <targetlabel>TradeServer2</targetlabel>
-            <host>TEST_IP</host>
-         </connection>
-      </conngroup>
-   </ci>
-   <ci>
-      <type>T1</type>
-      <label>TradeServer1</label>
-      <ip>TEST_IP</ip>
-      <conngroup type="INC">
-         <connection>
-            <targetci>T1</targetci>
-            <targetlabel>Trade11</targetlabel>
-            <host>TEST_IP</host>
-         </connection>
-      </conngroup>
-      <conngroup type="FLOW">
-         <connection>
-            <targetci>T1</targetci>
-            <targetlabel>Oracle</targetlabel>
-            <host>TEST_IP</host>
-         </connection>
-      </conngroup>
-   </ci>
-   <ci>
-      <type>T1</type>
-      <label>Trade22</label>
-      <ip>TEST_IP</ip>
-      <conngroup type="FLOW">
-         <connection>
-            <targetci>T1</targetci>
-            <targetlabel>Sybase</targetlabel>
-            <host>TEST_IP</host>
-         </connection>
-      </conngroup>
-   </ci>
-   <ci>
-      <type>T1</type>
-      <label>Trade11</label>
-      <ip>TEST_IP</ip>
-      <conngroup type="FLOW">
-         <connection>
-            <targetci>T1</targetci>
-            <targetlabel>Sybase2</targetlabel>
-            <host>TEST_IP</host>
-         </connection>
-      </conngroup>
-   </ci>
-   <ci>
-      <type>T1</type>
-      <label>TradeServer2</label>
-      <ip>TEST_IP</ip>
-      <conngroup type="INC">
-         <connection>
-            <targetci>T1</targetci>
-            <targetlabel>Trade22</targetlabel>
-            <host>TEST_IP</host>
-         </connection>
-      </conngroup>
-      <conngroup type="FLOW">
-         <connection>
-            <targetci>T1</targetci>
-            <targetlabel>Oracle</targetlabel>
-            <host>TEST_IP</host>
-         </connection>
-      </conngroup>
-   </ci>
-   <ci>
-      <type>T1</type>
-      <label>Oracle</label>
-      <ip>TEST_IP</ip>
-   </ci>
-   <ci>
-      <type>T1</type>
-      <label>Sybase</label>
-      <ip>TEST_IP</ip>
-   </ci>
-   <ci>
-      <type>T1</type>
-      <label>IIS1</label>
-      <ip>TEST_IP</ip>
-   </ci>
-   <ci>
-      <type>T1</type>
-      <label>IIS2</label>
-      <ip>TEST_IP</ip>
-   </ci>
-   <ci>
-      <type>T1</type>
-      <label>IIS3</label>
-      <ip>TEST_IP</ip>
-   </ci>
-   <ci>
-      <type>T1</type>
-      <label>IIS4</label>
-      <ip>TEST_IP</ip>
-   </ci>
-   <ci>
-      <type>T1</type>
-      <label>Sybase2</label>
-      <ip>TEST_IP</ip>
-      <conngroup type="FLOW">
-         <connection>
-            <targetci>T1</targetci>
-            <targetlabel>IIS1</targetlabel>
-            <host>TEST_IP</host>
-         </connection>
-         <connection>
-            <targetci>T1</targetci>
-            <targetlabel>IIS2</targetlabel>
-            <host>TEST_IP</host>
-         </connection>
-         <connection>
-            <targetci>T1</targetci>
-            <targetlabel>IIS3</targetlabel>
-            <host>TEST_IP</host>
-         </connection>
-         <connection>
-            <targetci>T1</targetci>
-            <targetlabel>IIS4</targetlabel>
-            <host>TEST_IP</host>
+            <host>127.0.0.2</host>
          </connection>
       </conngroup>
    </ci>
